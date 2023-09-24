@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+margin:0; 
+padding:0;
+box-sizing:border-box;
+}  
+
+body{
+background:#9370DB;
+font-family: 'poppins', sans-serif;
+}
+
+.container{
+padding:20px;  
+width:360px;
+background:white;
+border-radius:7px;
+position:absolute;
+top:30%;
+left:50%;
+transform:translate(-50%,-50%);
+max-height:450px;
+}
+
+.container .input-box{
+height:50px;  
+width:100%;
+display:flex;
+align-items:center;
+padding:7px;
+}
+
+.container .input-box input{
+all:unset;    
+height:35px;
+width:200px;
+border:1px solid grey;
+padding:5px;
+border-radius:7px;
+padding-left:10px;
+}
+
+.container .input-box .add-btn{
+all:unset;
+height:45px;
+width:100px;
+background:#9370DB;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:7px;
+margin-left:10px;
+cursor:pointer;
+}
+
+.container .all-todo{
+overflow:hidden;
+overflow-y:scroll;
+margin-top:20px;
+}
+
+.container .task{
+width:100%;
+margin-top:4px;
+display:flex;
+align-items:center;
+padding:15px;
+border-bottom:1px solid grey;
+}
+
+.container .task input{
+-webkit-appearance:none;
+height:25px;
+width:25px;
+border-radius:100%;
+border:1px solid grey;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.container .task input:checked{
+background:#9370DB;
+border-color:#9370DB;
+cursor:pointer;
+}
+
+.container .task input::before{
+content:"\2714";       
+color:white;
+display:none;
+}
+
+.container .task input:checked::before{
+display:block;        
+}
+
+.container .task span{
+margin-left:12px;
+width:220px;
+font-size:17px;
+}
+
+.container .task button{
+all:unset;     
+height:35px;
+width:40px;
+background:#9370DB;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:7px;
+margin-left:6px;
+font-size:12px;
+cursor:pointer;
+}
+
+.checked{
+text-decoration:line-through;  
+color:grey;
+}
+
+::selection{
+background:#9370DB;
+color:white;       
+}
